@@ -111,7 +111,6 @@ class _DonutState extends State<Donut> with TickerProviderStateMixin {
       backgroundColor: background,
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text(
           '3D Spinning Donut',

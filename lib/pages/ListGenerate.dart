@@ -8,15 +8,23 @@ class Listgenerate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: SafeArea(
         child: Wrap(
           children: List.generate(
             6,
             (index) => Container(
+              margin: const EdgeInsets.all(10),
               height: 200,
               width: 185,
               decoration: const BoxDecoration(
-                color: Colors.black,
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0x19000000),
+                    blurRadius: 24,
+                    offset: Offset(0, 11),
+                  ),
+                ],
                 borderRadius: BorderRadius.all(
                   Radius.circular(
                     16.0,
@@ -28,6 +36,7 @@ class Listgenerate extends StatelessWidget {
                   Container(
                     height: 140.0,
                     decoration: const BoxDecoration(
+                      color: Colors.white,
                       image: DecorationImage(
                         image: NetworkImage(
                           "https://picsum.photos/1000",
@@ -61,16 +70,16 @@ class Listgenerate extends StatelessWidget {
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
+                      children: [
                         Text(
-                          'Kentang Bakar',
+                          'Kentang Bakar ${index + 1}',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: const TextStyle(
                               fontSize: 12,
                               color: Colors.black,
                               fontWeight: FontWeight.w800),
                         ),
-                        Text(
+                        const Text(
                           'Breakfest',
                           textAlign: TextAlign.center,
                           style: TextStyle(

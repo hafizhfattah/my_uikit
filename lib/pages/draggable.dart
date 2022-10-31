@@ -18,9 +18,17 @@ class DraggablePage extends StatelessWidget {
           builder: (context, scrollController) {
             return Container(
               decoration: const BoxDecoration(
-                color: Colors.grey,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(12.0),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    color: Color(0x19000000),
+                    blurRadius: 24,
+                    offset: Offset(0, 11),
+                  ),
+                ],
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(12.0),
+                  topRight: Radius.circular(12.0),
                 ),
               ),
               child: ListView.builder(
@@ -30,16 +38,16 @@ class DraggablePage extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const ScrollPhysics(),
                 itemBuilder: (BuildContext context, int index) {
-                  return Card(
+                  return const Card(
                     child: ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Colors.grey[200],
-                        backgroundImage: const NetworkImage(
+                        backgroundColor: Colors.white,
+                        backgroundImage: NetworkImage(
                           "https://i.ibb.co/QrTHd59/woman.jpg",
                         ),
                       ),
-                      title: const Text("Jessica Doe"),
-                      subtitle: const Text("Programmer"),
+                      title: Text("Jessica Doe"),
+                      subtitle: Text("Programmer"),
                     ),
                   );
                 },

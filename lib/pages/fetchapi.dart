@@ -49,6 +49,7 @@ class _FetchingApiState extends State<FetchingApi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: _user.isNotEmpty
           ? ListView.builder(
               itemCount: _user.length,
@@ -82,7 +83,6 @@ class _FetchingApiState extends State<FetchingApi> {
                     )
                   : ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.black,
                         shape: ContinuousRectangleBorder(
                           borderRadius: BorderRadius.circular(64.0),
                         ),

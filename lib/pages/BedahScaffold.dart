@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print, file_names
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class BedahScaffold extends StatelessWidget {
   const BedahScaffold({Key? key}) : super(key: key);
@@ -10,10 +11,13 @@ class BedahScaffold extends StatelessWidget {
     return Scaffold(
       //Basic
       appBar: AppBar(),
-      body: const Center(
-        child: Text(
-          'Center',
-          style: TextStyle(color: Colors.white),
+      body: Center(
+        child: TextButton(
+          onPressed: Get.back,
+          child: const Text(
+            'Center, Back?',
+            style: TextStyle(),
+          ),
         ),
       ),
 

@@ -4,14 +4,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../utils.dart';
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({super.key});
+class GetXPage extends StatefulWidget {
+  const GetXPage({super.key});
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<GetXPage> createState() => _GetXPageState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _GetXPageState extends State<GetXPage> {
   final MyController c = Get.find();
   final font = GoogleFonts.poppins(
     letterSpacing: 1,
