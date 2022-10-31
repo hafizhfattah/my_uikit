@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     final c = Get.put(MyController());
     return Obx(() {
       return GetMaterialApp(
-        title: "GetX",
+        title: "MYKIT",
         defaultTransition: Transition.cupertino,
         debugShowCheckedModeBanner: false,
         theme: c.isActive.value

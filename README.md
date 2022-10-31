@@ -15,9 +15,6 @@ dependencies:
   google_fonts: ^3.0.1
   http: ^0.13.5
   json_serializable: ^6.4.1
-  url_launcher: ^6.1.6
-  web_socket_channel: ^2.2.0
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

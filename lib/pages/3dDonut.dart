@@ -121,25 +121,20 @@ class _DonutState extends State<Donut> with TickerProviderStateMixin {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 10,
-            ),
-            InteractiveViewer(
-              child: RotatedBox(
-                quarterTurns: 1,
-                child: FittedBox(
-                  child: Text(
-                    value,
-                    style: GoogleFonts.robotoMono().copyWith(
-                      color: front,
-                    ),
+        child: Center(
+          child: InteractiveViewer(
+            child: RotatedBox(
+              quarterTurns: 1,
+              child: FittedBox(
+                child: Text(
+                  value,
+                  style: GoogleFonts.robotoMono().copyWith(
+                    color: front,
                   ),
                 ),
               ),
             ),
-          ],
+          ),
         ),
       ),
       floatingActionButton: Column(
