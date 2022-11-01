@@ -39,7 +39,7 @@ class Listgenerate extends StatelessWidget {
                       color: Colors.white,
                       image: DecorationImage(
                         image: NetworkImage(
-                          "https://picsum.photos/1000",
+                          "https://picsum.photos/999",
                         ),
                         fit: BoxFit.fill,
                       ),
