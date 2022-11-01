@@ -22,7 +22,13 @@ class BedahScaffold extends StatelessWidget {
       ),
 
       //Location
-      floatingActionButton: FloatingActionButton(onPressed: () {}),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(
+          Icons.add,
+          size: 24.0,
+        ),
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerTop,
       bottomSheet: const Text('Bottom Shit'),
       persistentFooterButtons: const [Text('Footer Button')],
