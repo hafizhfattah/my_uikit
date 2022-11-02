@@ -1,6 +1,6 @@
 name: my_uikit
 description: A new Flutter project.
-publish_to: 'none' 
+publish_to: 'none'
 version: 1.0.0+1
 environment:
   sdk: '>=2.18.2 <3.0.0'
@@ -9,12 +9,14 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.2
   dio: ^4.0.6
+  floating: ^1.1.1+1
   freezed: ^2.1.1
   freezed_annotation: ^2.1.0
   get: ^4.6.5
   google_fonts: ^3.0.1
   http: ^0.13.5
   json_serializable: ^6.4.1
+  video_player: ^2.4.7
 dev_dependencies:
   flutter_test:
     sdk: flutter

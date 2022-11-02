@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
+import 'package:get/get.dart';
 import 'dart:math' as math;
 import 'package:google_fonts/google_fonts.dart';
 
@@ -109,12 +110,22 @@ class _DonutState extends State<Donut> with TickerProviderStateMixin {
     }
     return Scaffold(
       backgroundColor: background,
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         centerTitle: true,
         elevation: 0,
+        leading: IconButton(
+          onPressed: Get.back,
+          icon: Icon(
+            Icons.arrow_back,
+            size: 24.0,
+            color: front,
+          ),
+        ),
         title: Text(
           '3D Spinning Donut',
-          style: GoogleFonts.robotoMono().copyWith(
+          style: GoogleFonts.montserrat().copyWith(
             color: front,
           ),
         ),

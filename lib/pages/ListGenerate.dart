@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Listgenerate extends StatelessWidget {
   const Listgenerate({Key? key}) : super(key: key);
@@ -74,15 +75,15 @@ class Listgenerate extends StatelessWidget {
                         Text(
                           'Kentang Bakar ${index + 1}',
                           textAlign: TextAlign.center,
-                          style: const TextStyle(
+                          style: GoogleFonts.montserrat(
                               fontSize: 12,
                               color: Colors.black,
                               fontWeight: FontWeight.w800),
                         ),
-                        const Text(
+                        Text(
                           'Breakfest',
                           textAlign: TextAlign.center,
-                          style: TextStyle(
+                          style: GoogleFonts.montserrat(
                               fontSize: 10,
                               color: Colors.grey,
                               fontWeight: FontWeight.w800),

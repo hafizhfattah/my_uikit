@@ -7,6 +7,7 @@ import 'package:my_uikit/pages/fetchapi.dart';
 import 'package:my_uikit/pages/getx_page.dart';
 
 import 'pages/3dDonut.dart';
+import 'pages/pip.dart';
 import 'utils.dart';
 
 void main() {
@@ -76,7 +77,6 @@ class ListMenuApp extends StatelessWidget {
                     child: const Text("BedahScaffold"),
                   ),
                 ),
-
                 const SizedBox(
                   height: 12.0,
                 ),
@@ -140,21 +140,36 @@ class ListMenuApp extends StatelessWidget {
                 const SizedBox(
                   height: 12.0,
                 ),
-                // SizedBox(
-                //   height: 40,
-                //   child: ElevatedButton(
-                //     style: ElevatedButton.styleFrom(
-                //       shape: ContinuousRectangleBorder(
-                //         borderRadius: BorderRadius.circular(64.0),
-                //       ),
-                //     ),
-                //     onPressed: () => Get.to( Jonsi()),
-                //     child: const Text("New"),
-                //   ),
-                // ),
-                // const SizedBox(
-                //   height: 12.0,
-                // ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const PipExample()),
+                    child: const Text("Picture in Picture Mode (PIP)"),
+                  ),
+                ),
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const PipVideoPlayer()),
+                    child: const Text("Video Player (PIP)"),
+                  ),
+                ),
+                const SizedBox(
+                  height: 12.0,
+                ),
               ]),
         ),
       ),

@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../utils.dart';
+
 class BedahScaffold extends StatelessWidget {
   const BedahScaffold({Key? key}) : super(key: key);
 
@@ -14,9 +16,9 @@ class BedahScaffold extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: Get.back,
-          child: const Text(
+          child: Text(
             'Center, Back?',
-            style: TextStyle(),
+            style: font,
           ),
         ),
       ),
@@ -30,9 +32,9 @@ class BedahScaffold extends StatelessWidget {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerTop,
-      bottomSheet: const Text('Bottom Shit'),
-      persistentFooterButtons: const [Text('Footer Button')],
-      bottomNavigationBar: const Text('Bottom Navbar'),
+      bottomSheet: Text('Bottom Shit', style: font),
+      persistentFooterButtons: [Text('Footer Button', style: font)],
+      bottomNavigationBar: Text('Bottom Navbar', style: font),
 
       //Drawer
       drawerScrimColor: Colors.amber,

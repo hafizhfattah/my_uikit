@@ -1,4 +1,19 @@
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter/material.dart';
+
+final font = GoogleFonts.montserrat(
+  letterSpacing: 1,
+  fontWeight: FontWeight.w400,
+);
+
+final aspectRatios = [
+  [1, 1],
+  [1, 3],
+  [3, 2],
+  [16, 9],
+  [9, 16],
+];
 
 //GetxController
 class MyController extends GetxController {

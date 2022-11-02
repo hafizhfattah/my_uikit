@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../utils.dart';
+
 class DraggablePage extends StatelessWidget {
   const DraggablePage({super.key});
 
@@ -36,16 +38,16 @@ class DraggablePage extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const ScrollPhysics(),
                 itemBuilder: (BuildContext context, int index) {
-                  return const Card(
+                  return Card(
                     child: ListTile(
-                      leading: CircleAvatar(
+                      leading: const CircleAvatar(
                         backgroundColor: Colors.white,
                         backgroundImage: NetworkImage(
                           "https://i.ibb.co/QrTHd59/woman.jpg",
                         ),
                       ),
-                      title: Text("Jessica Doe"),
-                      subtitle: Text("Programmer"),
+                      title: Text("Jessica Doe", style: font),
+                      subtitle: Text("Programmer", style: font),
                     ),
                   );
                 },

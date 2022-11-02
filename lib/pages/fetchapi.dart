@@ -2,8 +2,9 @@
 
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
+
+import '../utils.dart';
 
 class FetchingApi extends StatefulWidget {
   const FetchingApi({super.key});
@@ -13,11 +14,6 @@ class FetchingApi extends StatefulWidget {
 }
 
 class _FetchingApiState extends State<FetchingApi> {
-  final font = GoogleFonts.montserrat(
-    letterSpacing: 1,
-    fontWeight: FontWeight.w400,
-  );
-
   bool isLoading = false;
 
   List<dynamic> _user = [];
