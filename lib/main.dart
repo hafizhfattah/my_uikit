@@ -2,7 +2,6 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:my_uikit/pages/BedahScaffold.dart';
 import 'package:my_uikit/pages/ListGenerate.dart';
-import 'package:my_uikit/pages/card1.dart';
 import 'package:my_uikit/pages/draggable.dart';
 import 'package:my_uikit/pages/fetchapi.dart';
 import 'package:my_uikit/pages/getx_page.dart';
@@ -43,117 +42,122 @@ class ListMenuApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-          padding: const EdgeInsets.all(12),
-          scrollDirection: Axis.vertical,
-          children: [
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
+    return SelectionArea(
+      child: Scaffold(
+        body: SafeArea(
+          child: ListView(
+              padding: const EdgeInsets.all(12),
+              scrollDirection: Axis.vertical,
+              children: [
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const Donut()),
+                    child: const Text("3d Donut"),
                   ),
                 ),
-                onPressed: () => Get.to(const Donut()),
-                child: const Text("3d Donut"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const BedahScaffold()),
+                    child: const Text("BedahScaffold"),
                   ),
                 ),
-                onPressed: () => Get.to(const BedahScaffold()),
-                child: const Text("BedahScaffold"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
+
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const DraggablePage()),
+                    child: const Text("Draggable Bottom Sheet"),
                   ),
                 ),
-                onPressed: () => Get.to(const Card1()),
-                child: const Text("Card"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const FetchingApi()),
+                    child: const Text("Fetching API"),
                   ),
                 ),
-                onPressed: () => Get.to(const DraggablePage()),
-                child: const Text("Draggable Bottom Sheet"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const GetXPage()),
+                    child: const Text("GetXPage"),
                   ),
                 ),
-                onPressed: () => Get.to(const FetchingApi()),
-                child: const Text("Fetching API"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const Listgenerate()),
+                    child: const Text("Listgenerate"),
                   ),
                 ),
-                onPressed: () => Get.to(const GetXPage()),
-                child: const Text("GetXPage"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-            SizedBox(
-              height: 40,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: ContinuousRectangleBorder(
-                    borderRadius: BorderRadius.circular(64.0),
-                  ),
+                const SizedBox(
+                  height: 12.0,
                 ),
-                onPressed: () => Get.to(const Listgenerate()),
-                child: const Text("Listgenerate"),
-              ),
-            ),
-            const SizedBox(
-              height: 12.0,
-            ),
-          ]),
+                // SizedBox(
+                //   height: 40,
+                //   child: ElevatedButton(
+                //     style: ElevatedButton.styleFrom(
+                //       shape: ContinuousRectangleBorder(
+                //         borderRadius: BorderRadius.circular(64.0),
+                //       ),
+                //     ),
+                //     onPressed: () => Get.to( Jonsi()),
+                //     child: const Text("New"),
+                //   ),
+                // ),
+                // const SizedBox(
+                //   height: 12.0,
+                // ),
+              ]),
+        ),
+      ),
     );
   }
 }
