@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 
 import '../utils.dart';
 
-class BedahScaffold extends StatelessWidget {
-  const BedahScaffold({Key? key}) : super(key: key);
+class FullScaffold extends StatelessWidget {
+  const FullScaffold({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

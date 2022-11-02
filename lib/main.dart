@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'package:my_uikit/pages/BedahScaffold.dart';
-import 'package:my_uikit/pages/ListGenerate.dart';
+import 'package:my_uikit/pages/fullscaffold.dart';
+import 'package:my_uikit/pages/listgenerate.dart';
 import 'package:my_uikit/pages/draggable.dart';
 import 'package:my_uikit/pages/fetchapi.dart';
 import 'package:my_uikit/pages/getx_page.dart';
@@ -73,7 +73,7 @@ class ListMenuApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(64.0),
                       ),
                     ),
-                    onPressed: () => Get.to(const BedahScaffold()),
+                    onPressed: () => Get.to(const FullScaffold()),
                     child: const Text("BedahScaffold"),
                   ),
                 ),

@@ -12,9 +12,15 @@ class PipExample extends StatefulWidget {
 }
 
 class _PipExampleState extends State<PipExample> {
-  late Floating floating;
   List<int> aspectRatio = aspectRatios.first;
+  late Floating floating;
   bool isPipAvailable = true;
+
+  @override
+  void dispose() {
+    floating.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
@@ -25,12 +31,6 @@ class _PipExampleState extends State<PipExample> {
   void requestPipAvailable() async {
     isPipAvailable = await floating.isPipAvailable;
     setState(() {});
-  }
-
-  @override
-  void dispose() {
-    floating.dispose();
-    super.dispose();
   }
 
   @override
@@ -105,10 +105,18 @@ class PipVideoPlayer extends StatefulWidget {
 }
 
 class _PipVideoPlayerState extends State<PipVideoPlayer> {
-  late Floating floating;
-  late VideoPlayerController _controller;
   List<int> aspectRatio = aspectRatios.first;
+  late Floating floating;
   bool isPipAvailable = true;
+
+  late VideoPlayerController _controller;
+
+  @override
+  void dispose() {
+    floating.dispose();
+    _controller.dispose();
+    super.dispose();
+  }
 
   @override
   void initState() {
@@ -131,13 +139,6 @@ class _PipVideoPlayerState extends State<PipVideoPlayer> {
     isPipAvailable = await floating.isPipAvailable;
 
     setState(() {});
-  }
-
-  @override
-  void dispose() {
-    floating.dispose();
-    _controller.dispose();
-    super.dispose();
   }
 
   @override
