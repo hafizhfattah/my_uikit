@@ -7,24 +7,24 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
+  cupertino_icons: ^1.0.5
   dio: ^4.0.6
   draggable_fab: ^0.1.4
   dropdown_button2: ^1.8.9
   flick_video_player: ^0.5.0
   floating: ^1.1.1+1
-  freezed: ^2.1.1
-  freezed_annotation: ^2.1.0
+  freezed: ^2.2.1
+  freezed_annotation: ^2.2.0
   get: ^4.6.5
   google_fonts: ^3.0.1
   http: ^0.13.5
-  json_serializable: ^6.4.1
+  json_serializable: ^6.5.4
   readmore: ^2.2.0
   video_player: ^2.4.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
   build_runner: ^2.3.2
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1
 flutter:
   uses-material-design: true

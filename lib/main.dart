@@ -150,7 +150,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const PipVideoPlayer()),
-                    child: const Text("PIP VideoPlayer"),
+                    child: const Text("PIP VideoPlayer ~PIP Work On Android"),
                   ),
                 ),
                 const SizedBox(
@@ -165,7 +165,8 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const PipListVideoPlayer()),
-                    child: const Text("PIP ListVideoPlayer"),
+                    child:
+                        const Text("PIP ListVideoPlayer ~PIP Work On Android"),
                   ),
                 ),
                 const SizedBox(
