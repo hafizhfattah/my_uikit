@@ -31,26 +31,27 @@ class Video {
 var videos = [
   Video(
     description:
-        "Big Buck Bunny tells the story of a giant rabbit with a heart bigger than himself. When one sunny day three rodents rudely harass him, something snaps... and the rabbit ain't no bunny anymore! In the typical cartoon tradition he prepares the nasty rodents a comical revenge.",
-    name: "Big Buck Bunny",
+        "HBO GO now works with Chromecast -- the easiest way to enjoy online video on your TV. For when you want to settle into your Iron Throne to watch the latest episodes.",
+    name: "For Bigger Blazes",
     thumbnail: "https://picsum.photos/1020",
     url:
-        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
   ),
   Video(
     description:
-        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when you want to make Buster's big meltdowns even bigger..",
-    name: "For Bigger Meltdowns",
+        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when Batman's escapes aren't quite big enough.",
+    name: "For Bigger Escape",
     thumbnail: "https://picsum.photos/1010",
     url:
-        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
   ),
   Video(
-    description: "The first Blender Open Movie from 2006",
-    name: "Elephant Dream",
+    description:
+        "Introducing Chromecast. The easiest way to enjoy online video and music on your TV.",
+    name: "For Bigger Fun",
     thumbnail: "https://picsum.photos/1300",
     url:
-        'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
   )
 ];
 

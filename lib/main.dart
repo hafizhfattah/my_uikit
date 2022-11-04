@@ -1,14 +1,14 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:my_uikit/pages/fullscaffold.dart';
-import 'package:my_uikit/pages/listgenerate.dart';
+import 'package:my_uikit/pages/list_generate.dart';
 import 'package:my_uikit/pages/draggable.dart';
 import 'package:my_uikit/pages/fetchapi.dart';
 import 'package:my_uikit/pages/getx_page.dart';
 
 import 'pages/3dDonut.dart';
-import 'pages/listvideoplayer.dart';
-import 'pages/pip.dart';
+import 'pages/pip_listvideoplayer.dart';
+import 'pages/pip_videoplayer.dart';
 import 'utils.dart';
 
 void main() {
@@ -75,7 +75,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const FullScaffold()),
-                    child: const Text("BedahScaffold"),
+                    child: const Text("Full Scaffold"),
                   ),
                 ),
                 const SizedBox(
@@ -134,8 +134,8 @@ class ListMenuApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(64.0),
                       ),
                     ),
-                    onPressed: () => Get.to(const Listgenerate()),
-                    child: const Text("Listgenerate"),
+                    onPressed: () => Get.to(const ListGenerate()),
+                    child: const Text("List Generate"),
                   ),
                 ),
                 const SizedBox(
@@ -164,23 +164,8 @@ class ListMenuApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(64.0),
                       ),
                     ),
-                    onPressed: () => Get.to(const ListVideoPlayer()),
-                    child: const Text("List Video Player"),
-                  ),
-                ),
-                const SizedBox(
-                  height: 12.0,
-                ),
-                SizedBox(
-                  height: 40,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      shape: ContinuousRectangleBorder(
-                        borderRadius: BorderRadius.circular(64.0),
-                      ),
-                    ),
-                    onPressed: () => Get.to(const Newplayer()),
-                    child: const Text("List Video asd"),
+                    onPressed: () => Get.to(const PipListVideoPlayer()),
+                    child: const Text("PIP ListVideoPlayer"),
                   ),
                 ),
                 const SizedBox(

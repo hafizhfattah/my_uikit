@@ -34,7 +34,7 @@ class _PipVideoPlayerState extends State<PipVideoPlayer> {
     floating = Floating();
     flickManager = FlickManager(
       videoPlayerController: VideoPlayerController.network(
-          "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"),
+          "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"),
     );
     super.initState();
   }
@@ -88,7 +88,7 @@ class _PipVideoPlayerState extends State<PipVideoPlayer> {
                   height: 10.0,
                 ),
                 Text(
-                  "Film 2022",
+                  "For Bigger Joyrides",
                   style: GoogleFonts.montserrat(
                     letterSpacing: 1,
                     fontSize: 20,
@@ -99,8 +99,8 @@ class _PipVideoPlayerState extends State<PipVideoPlayer> {
                   height: 10.0,
                 ),
                 ReadMoreText(
-                  'Lahir di pinggir Danau Maninjau dan tidak pernah menginjak tanah di luar ranah Minangkabau. Masa kecilnya adalah berburu durian runtuh di rimba Bukit Barisan, bermain bola di sawah berlumpur dan tentu mandi berkecipak di air biru Danau Maninjau. Tiba-tiba saja dia harus naik bus tiga hari tiga malam melintasi punggung Sumatera dan Jawa menuju sebuah desa di pelosok Jawa Timur. Ibunya ingin dia menjadi Buya Hamka walau Alif ingin menjadi Habibie. Dengan setengah hati dia mengikuti perintah Ibunya: belajar di pondok. Di kelas hari pertamanya di Pondok Madani (PM), Alif terkesima dengan "mantera" sakti man jadda wajada. Siapa yang bersungguh-sungguh pasti sukses. Dia terheran-heran mendengar komentator sepakbola berbahasa Arab, anak menggigau dalam bahasa Inggris, merinding mendengar ribuan orang melagukan Syair Abu Nawas dan terkesan melihat pondoknya setiap pagi seperti melayang di udara. Dipersatukan oleh hukuman jewer berantai, Alif berteman dekat dengan Raja dari Medan, Said dari Surabaya, Dulmajid dari Sumenep, Atang dari Bandung dan Baso dari Gowa. Di bawah menara masjid yang menjulang, mereka berenam kerap menunggu maghrib sambil menatap awan lembayung yang berarak pulang ke ufuk. Di mata belia mereka, awan-awan itu menjelma menjadi negara dan benua impian masing-masing. Kemana impian jiwa muda ini membawa mereka?',
-                  trimLines: 5,
+                  'Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for the times that call for bigger joyrides.',
+                  trimLines: 2,
                   style: font,
                   trimMode: TrimMode.Line,
                   trimCollapsedText: 'Read More',
@@ -128,7 +128,7 @@ class _PipVideoPlayerState extends State<PipVideoPlayer> {
                   decoration: InputDecoration(
                     isDense: true,
                     contentPadding: const EdgeInsets.only(
-                        bottom: 10, top: 20, left: 10, right: 10),
+                        bottom: 10, top: 10, left: 10, right: 10),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(12),
                     ),
