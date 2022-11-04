@@ -10,10 +10,8 @@ final font = GoogleFonts.montserrat(
 
 final aspectRatios = [
   [1, 1],
-  [1, 3],
   [3, 2],
   [16, 9],
-  [9, 16],
 ];
 
 class Video {

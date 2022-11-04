@@ -171,6 +171,21 @@ class ListMenuApp extends StatelessWidget {
                 const SizedBox(
                   height: 12.0,
                 ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const Newplayer()),
+                    child: const Text("List Video asd"),
+                  ),
+                ),
+                const SizedBox(
+                  height: 12.0,
+                ),
               ]),
         ),
       ),

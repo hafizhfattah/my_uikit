@@ -34,7 +34,7 @@ class _PipVideoPlayerState extends State<PipVideoPlayer> {
     floating = Floating();
     flickManager = FlickManager(
       videoPlayerController: VideoPlayerController.network(
-          "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"),
+          "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"),
     );
     super.initState();
   }
