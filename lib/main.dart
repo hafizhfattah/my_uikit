@@ -7,6 +7,7 @@ import 'package:my_uikit/pages/fetchapi.dart';
 import 'package:my_uikit/pages/getx_page.dart';
 
 import 'pages/3dDonut.dart';
+import 'pages/listvideoplayer.dart';
 import 'pages/pip.dart';
 import 'utils.dart';
 
@@ -148,8 +149,8 @@ class ListMenuApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(64.0),
                       ),
                     ),
-                    onPressed: () => Get.to(const PipExample()),
-                    child: const Text("Picture in Picture Mode (PIP)"),
+                    onPressed: () => Get.to(const PipVideoPlayer()),
+                    child: const Text("PIP VideoPlayer"),
                   ),
                 ),
                 const SizedBox(
@@ -163,8 +164,8 @@ class ListMenuApp extends StatelessWidget {
                         borderRadius: BorderRadius.circular(64.0),
                       ),
                     ),
-                    onPressed: () => Get.to(const PipVideoPlayer()),
-                    child: const Text("Video Player (PIP)"),
+                    onPressed: () => Get.to(const ListVideoPlayer()),
+                    child: const Text("List Video Player"),
                   ),
                 ),
                 const SizedBox(
