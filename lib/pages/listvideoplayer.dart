@@ -121,13 +121,13 @@ class _ListVideoPlayerState extends State<ListVideoPlayer> {
                           _controller.value.isPlaying
                               ? Icons.pause
                               : Icons.play_arrow,
-                          size: 40,
+                          size: 30,
                         ),
                       ),
                     ],
                   )
                 : const Center(
-                    child: CircularProgressIndicator(),
+                    child: CircularProgressIndicator.adaptive(),
                   ),
             const SizedBox(
               height: 10.0,
