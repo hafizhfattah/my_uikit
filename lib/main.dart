@@ -56,30 +56,29 @@ class _ListMenuAppState extends State<ListMenuApp> {
   Widget build(BuildContext context) {
     return SelectionArea(
       child: Scaffold(
-        appBar: AppBar(
-          title: Row(
-            children: [
-              Text(
-                "DarkMode",
-                style: font,
-              ),
-              const Spacer(),
-              Switch.adaptive(
-                value: c.isActive.value,
-                onChanged: (bool newValue) {
-                  setState(() {
-                    c.isActive.value = newValue;
-                  });
-                },
-              ),
-            ],
-          ),
-        ),
+        appBar: AppBar(),
         body: SafeArea(
           child: ListView(
               padding: const EdgeInsets.all(12),
               scrollDirection: Axis.vertical,
               children: [
+                Row(
+                  children: [
+                    Text(
+                      "DarkMode",
+                      style: font,
+                    ),
+                    const Spacer(),
+                    Switch.adaptive(
+                      value: c.isActive.value,
+                      onChanged: (bool newValue) {
+                        setState(() {
+                          c.isActive.value = newValue;
+                        });
+                      },
+                    ),
+                  ],
+                ),
                 SizedBox(
                   height: 40,
                   child: ElevatedButton(
