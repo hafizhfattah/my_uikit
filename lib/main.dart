@@ -1,6 +1,9 @@
+// ignore_for_file: unused_local_variable
+
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:my_uikit/pages/fullscaffold.dart';
+import 'package:my_uikit/pages/furniture_page.dart';
 import 'package:my_uikit/pages/list_generate.dart';
 import 'package:my_uikit/pages/draggable.dart';
 import 'package:my_uikit/pages/fetchapi.dart';
@@ -60,7 +63,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const Donut()),
-                    child: const Text("3d Donut"),
+                    child: Text("3d Donut", style: font),
                   ),
                 ),
                 const SizedBox(
@@ -75,7 +78,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const FullScaffold()),
-                    child: const Text("Full Scaffold"),
+                    child: Text("Full Scaffold", style: font),
                   ),
                 ),
                 const SizedBox(
@@ -90,7 +93,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const DraggablePage()),
-                    child: const Text("Draggable Bottom Sheet"),
+                    child: Text("Draggable Bottom Sheet", style: font),
                   ),
                 ),
                 const SizedBox(
@@ -105,7 +108,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const FetchingApi()),
-                    child: const Text("Fetching API"),
+                    child: Text("Fetching API", style: font),
                   ),
                 ),
                 const SizedBox(
@@ -120,7 +123,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const GetXPage()),
-                    child: const Text("GetXPage"),
+                    child: Text("GetXPage", style: font),
                   ),
                 ),
                 const SizedBox(
@@ -135,7 +138,7 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const ListGenerate()),
-                    child: const Text("List Generate"),
+                    child: Text("List Generate", style: font),
                   ),
                 ),
                 const SizedBox(
@@ -150,7 +153,8 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const PipVideoPlayer()),
-                    child: const Text("PIP VideoPlayer ~PIP Work On Android"),
+                    child: Text("PIP VideoPlayer ~PIP Work On Android",
+                        style: font),
                   ),
                 ),
                 const SizedBox(
@@ -165,8 +169,23 @@ class ListMenuApp extends StatelessWidget {
                       ),
                     ),
                     onPressed: () => Get.to(const PipListVideoPlayer()),
-                    child:
-                        const Text("PIP ListVideoPlayer ~PIP Work On Android"),
+                    child: Text("PIP ListVideoPlayer ~PIP Work On Android",
+                        style: font),
+                  ),
+                ),
+                const SizedBox(
+                  height: 12.0,
+                ),
+                SizedBox(
+                  height: 40,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(64.0),
+                      ),
+                    ),
+                    onPressed: () => Get.to(const FurniturePage()),
+                    child: Text("Furniture Page", style: font),
                   ),
                 ),
                 const SizedBox(
