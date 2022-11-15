@@ -28,6 +28,7 @@ final font = GoogleFonts.montserrat(
   fontWeight: FontWeight.w400,
 );
 
+//Class
 class Video {
   Video({
     required this.name,
@@ -42,6 +43,7 @@ class Video {
   final String url;
 }
 
+//List
 final aspectRatios = [
   [1, 1],
   [3, 2],

@@ -120,8 +120,8 @@ class _FurniturePageState extends State<FurniturePage> {
                     ],
                   ),
                   SizedBox(
-                    height: 650,
-                    width: MediaQuery.of(context).size.width,
+                    height: 550,
+                    width: double.infinity,
                     child: TabBarView(
                       children: [
                         Column(
@@ -142,138 +142,151 @@ class _FurniturePageState extends State<FurniturePage> {
                             const SizedBox(
                               height: 10.0,
                             ),
-                            GridView.builder(
-                              gridDelegate:
-                                  const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                mainAxisSpacing: 20,
-                                crossAxisSpacing: 20,
-                              ),
-                              itemCount: nama.length,
-                              shrinkWrap: true,
-                              physics: const ScrollPhysics(),
-                              itemBuilder: (BuildContext context, int index) {
-                                return Container(
-                                  decoration: const BoxDecoration(
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Color(0x19000000),
-                                        blurRadius: 6,
-                                        offset: Offset(0, 4),
-                                      ),
-                                    ],
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.all(
-                                      Radius.circular(
-                                        16.0,
-                                      ),
-                                    ),
+                            Expanded(
+                              child: SizedBox(
+                                width: double.infinity,
+                                child: GridView.builder(
+                                  scrollDirection: Axis.vertical,
+                                  gridDelegate:
+                                      const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2,
+                                    mainAxisSpacing: 12,
+                                    crossAxisSpacing: 12,
                                   ),
-                                  child: Column(
-                                    children: [
-                                      Stack(
-                                        children: [
-                                          Container(
-                                            height: MediaQuery.of(context)
-                                                    .size
-                                                    .height /
-                                                6.7,
-                                            decoration: BoxDecoration(
-                                              image: DecorationImage(
-                                                image:
-                                                    NetworkImage(images[index]),
-                                                fit: BoxFit.cover,
-                                              ),
-                                              borderRadius:
-                                                  const BorderRadius.only(
-                                                topLeft: Radius.circular(
-                                                  16.0,
-                                                ),
-                                                topRight: Radius.circular(
-                                                  16.0,
-                                                ),
-                                              ),
-                                            ),
+                                  itemCount: nama.length,
+                                  shrinkWrap: true,
+                                  physics: const ScrollPhysics(),
+                                  itemBuilder:
+                                      (BuildContext context, int index) {
+                                    return Container(
+                                      decoration: const BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Color(0x19000000),
+                                            blurRadius: 6,
+                                            offset: Offset(0, 4),
                                           ),
-                                          Positioned(
-                                            left: 10,
-                                            top: 10,
-                                            child: Container(
-                                              height: 40.0,
-                                              width: 40,
-                                              decoration: const BoxDecoration(
-                                                color: Colors.white,
-                                                borderRadius: BorderRadius.all(
-                                                  Radius.circular(
-                                                    12.0,
+                                        ],
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(
+                                            16.0,
+                                          ),
+                                        ),
+                                      ),
+                                      child: Column(
+                                        children: [
+                                          Stack(
+                                            children: [
+                                              Container(
+                                                height: 110,
+                                                decoration: BoxDecoration(
+                                                  image: DecorationImage(
+                                                    image: NetworkImage(
+                                                        images[index]),
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                  borderRadius:
+                                                      const BorderRadius.only(
+                                                    topLeft: Radius.circular(
+                                                      16.0,
+                                                    ),
+                                                    topRight: Radius.circular(
+                                                      16.0,
+                                                    ),
                                                   ),
                                                 ),
                                               ),
-                                              child: const Center(
-                                                child: Icon(
-                                                  CupertinoIcons.heart_fill,
-                                                  color: Colors.red,
-                                                  size: 24.0,
+                                              Positioned(
+                                                left: 10,
+                                                top: 10,
+                                                child: Container(
+                                                  height: 40.0,
+                                                  width: 40,
+                                                  decoration:
+                                                      const BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius:
+                                                        BorderRadius.all(
+                                                      Radius.circular(
+                                                        12.0,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  child: const Center(
+                                                    child: Icon(
+                                                      CupertinoIcons.heart_fill,
+                                                      color: Colors.red,
+                                                      size: 24.0,
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
+                                            ],
+                                          ),
+                                          const Spacer(),
+                                          Padding(
+                                            padding: const EdgeInsets.all(12),
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  nama[index],
+                                                  style: GoogleFonts.montserrat(
+                                                    color: Colors.brown[800],
+                                                    letterSpacing: 1,
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
+                                                ),
+                                                const SizedBox(
+                                                  height: 5.0,
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Text(
+                                                      "\$ ${harga[index]}",
+                                                      style: GoogleFonts
+                                                          .montserrat(
+                                                        color: Colors.grey[500],
+                                                        letterSpacing: 1,
+                                                        fontWeight:
+                                                            FontWeight.w500,
+                                                      ),
+                                                    ),
+                                                    const Spacer(),
+                                                    const Icon(
+                                                      Icons.star,
+                                                      color: Colors.yellow,
+                                                      size: 18,
+                                                    ),
+                                                    const SizedBox(
+                                                      width: 5.0,
+                                                    ),
+                                                    Text(
+                                                      bintang[index],
+                                                      style: GoogleFonts
+                                                          .montserrat(
+                                                        color: Colors.grey[500],
+                                                        letterSpacing: 1,
+                                                        fontWeight:
+                                                            FontWeight.w500,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
                                             ),
                                           ),
                                         ],
                                       ),
-                                      const Spacer(),
-                                      Padding(
-                                        padding: const EdgeInsets.all(12),
-                                        child: Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          children: [
-                                            Text(
-                                              nama[index],
-                                              style: GoogleFonts.montserrat(
-                                                color: Colors.brown[800],
-                                                letterSpacing: 1,
-                                                fontWeight: FontWeight.w600,
-                                              ),
-                                            ),
-                                            const SizedBox(
-                                              height: 5.0,
-                                            ),
-                                            Row(
-                                              children: [
-                                                Text(
-                                                  "\$ ${harga[index]}",
-                                                  style: GoogleFonts.montserrat(
-                                                    color: Colors.grey[500],
-                                                    letterSpacing: 1,
-                                                    fontWeight: FontWeight.w500,
-                                                  ),
-                                                ),
-                                                const Spacer(),
-                                                const Icon(
-                                                  Icons.star,
-                                                  color: Colors.yellow,
-                                                  size: 18,
-                                                ),
-                                                const SizedBox(
-                                                  width: 5.0,
-                                                ),
-                                                Text(
-                                                  bintang[index],
-                                                  style: GoogleFonts.montserrat(
-                                                    color: Colors.grey[500],
-                                                    letterSpacing: 1,
-                                                    fontWeight: FontWeight.w500,
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                );
-                              },
+                                    );
+                                  },
+                                ),
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 12.0,
                             ),
                           ],
                         ),
