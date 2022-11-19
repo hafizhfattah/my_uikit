@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../utils.dart';
-
 class CustomTabBar extends StatelessWidget {
   const CustomTabBar({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final font = GoogleFonts.montserrat(
+      color: Colors.blueGrey,
+      letterSpacing: 1,
+      fontWeight: FontWeight.w500,
+    );
+
     return DefaultTabController(
       length: 3,
       child: Scaffold(
