@@ -31,7 +31,7 @@ dev_dependencies:
 ### 🚀 **Getting Started**
 1. Clone this project || Download Zip from GitHub
 2. Run `flutter pub get` In Terminal
-3. Run the Project In Web or Emulator
+3. Run the project In Web or Emulator
 
 ### 📷 **Demo** 
 Last Demo Update 5 nov 2022
