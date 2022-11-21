@@ -2,6 +2,7 @@
 
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_uikit/pages/fullscaffold.dart';
 import 'package:my_uikit/pages/furniture_page.dart';
 import 'package:my_uikit/pages/list_generate.dart';
@@ -56,28 +57,36 @@ class _ListMenuAppState extends State<ListMenuApp> {
   Widget build(BuildContext context) {
     return SelectionArea(
       child: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Row(
+            children: [
+              Text(
+                "DarkMode",
+                style: GoogleFonts.montserrat(
+                  letterSpacing: 1,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              const Spacer(),
+              Switch.adaptive(
+                value: c.isActive.value,
+                onChanged: (bool newValue) {
+                  setState(() {
+                    c.isActive.value = newValue;
+                  });
+                },
+              ),
+            ],
+          ),
+        ),
         body: SafeArea(
           child: ListView(
               padding: const EdgeInsets.all(12),
               scrollDirection: Axis.vertical,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      "DarkMode",
-                      style: font,
-                    ),
-                    const Spacer(),
-                    Switch.adaptive(
-                      value: c.isActive.value,
-                      onChanged: (bool newValue) {
-                        setState(() {
-                          c.isActive.value = newValue;
-                        });
-                      },
-                    ),
-                  ],
+                const SizedBox(
+                  height: 12.0,
                 ),
                 SizedBox(
                   height: 40,

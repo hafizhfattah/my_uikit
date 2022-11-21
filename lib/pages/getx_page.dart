@@ -37,23 +37,23 @@ class _GetXPageState extends State<GetXPage> {
         child: ListView(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
           children: [
-            Row(
-              children: [
-                Text(
-                  "DarkMode",
-                  style: font,
-                ),
-                const Spacer(),
-                Switch.adaptive(
-                  value: c.isActive.value,
-                  onChanged: (bool newValue) {
-                    setState(() {
-                      c.isActive.value = newValue;
-                    });
-                  },
-                ),
-              ],
-            ),
+            // Row(
+            //   children: [
+            //     Text(
+            //       "DarkMode",
+            //       style: font,
+            //     ),
+            //     const Spacer(),
+            //     Switch.adaptive(
+            //       value: c.isActive.value,
+            //       onChanged: (bool newValue) {
+            //         setState(() {
+            //           c.isActive.value = newValue;
+            //         });
+            //       },
+            //     ),
+            //   ],
+            // ),
             const SizedBox(
               height: 10.0,
             ),
